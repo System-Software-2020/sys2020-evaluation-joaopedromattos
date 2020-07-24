@@ -2,7 +2,6 @@
 	;; nasm -f elf32 ex1.asm -o ex1.o
 	;; ld -m elf_i386 ex1.o -o ex1
 	 
-	
         global _start
         global main
         global write
@@ -26,7 +25,7 @@ main:
         push p1
         push 1
         call write
-        add esp, 8
+        add esp, 12
         mov eax, 0              
         mov esp, ebp            
         pop ebp
